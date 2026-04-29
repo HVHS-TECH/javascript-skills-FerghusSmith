@@ -4,20 +4,16 @@ Name of task: variables
 console.log("Running t01_introduction.js");
 
 //Variables
-const readline = require('readline');
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
+let name = "jeff";
+let money = "20";
+let age = "12";
+let time = "now";
 /*
 Main Code
 */
-console.log("Hello World");
-rl.question('who are you?'), (answer) => {
-    console.log("you are " + answer);
-    rl.close;
-}
+console.log("hi " + name);
+console.log("you have $" + money + " dollars");
+console.log("as of " + time + " you are " + age + " years old");
 /*
 Functions
 */
