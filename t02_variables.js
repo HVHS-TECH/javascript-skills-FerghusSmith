@@ -22,7 +22,7 @@ console.log("hi " + name);
 console.log("you have " + money + " dollars");
 console.log("as of " + time + " you are " + age + " years old");
 console.log("in 10 years you will be " + (age + 10) + " years old");
-
+console.log("you were " + (age / 2) + " hald your life ago")
 /*
 Functions
 */
