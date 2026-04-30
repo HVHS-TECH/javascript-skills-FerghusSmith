@@ -21,9 +21,6 @@ time = window.prompt("What is the year?");
 console.log("hi " + name);
 console.log("you have " + money + " dollars");
 console.log("as of the year " + time + " you are " + age + " years old");
-console.log("You were born in " + (time - age))
-console.log("in 10 years you will be " + (age + 10) + " years old");
-console.log("you were " + (age / 2) + " hald your life ago")
 /*
 Functions
 */
