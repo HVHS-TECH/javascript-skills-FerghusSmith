@@ -22,7 +22,8 @@ console.log("hi " + name);
 console.log("you have " + money + " dollars");
 console.log("as of the year " + time + " you are " + age + " years old");
 console.log("You were born in " + (time - age));
-console.log("In 10 years you will be" + (age + 10) + " years old")
+console.log("In 10 years you will be " + (age + 10) + " years old");
+console.log("You will be 50 in the year " + ((50 - age) + time);
 /*
 Functions
 */
