@@ -28,6 +28,7 @@ console.log("You will die on average in the year " + ((time - age) + 73));
 console.log("You will die in " + ((73 - age)) + " years");
 console.log("If you spend half your money, you wil have " + (money / 2));
 console.log("If you won the average lottery, you will have " + (money + 350000));
+console.log("If you died right now, there would be a " + ((age - 30) / 25) + " chance that you would have passed on your genes")
 /*
 Functions
 */
