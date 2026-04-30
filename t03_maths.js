@@ -16,6 +16,7 @@ name = window.prompt("what is your name?");
 money = window.prompt("how much money do you have?");
 age = parseInt(window.prompt("How old are you"));
 time = parseInt(window.prompt("What is the year?"));
+lifeSpan = (73 - age) / 1000 * money;
 
 
 console.log("hi " + name);
@@ -24,8 +25,8 @@ console.log("as of the year " + time + " you are " + age + " years old");
 console.log("You were born in " + (time - age));
 console.log("In 10 years you will be " + (age + 10) + " years old");
 console.log("You will be 50 in the year " + ((50 - age) + time));
-console.log("You will die on average in the year " + ((time - age) + 73));
-console.log("You will die in " + ((73 - age) / 1000 * money) + " years");
+console.log("You will die on average in the year " + (time + lifeSpan));
+console.log("You will die in " + lifeSpan + " years");
 /*
 Functions
 */
