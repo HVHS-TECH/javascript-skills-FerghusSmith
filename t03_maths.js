@@ -25,7 +25,7 @@ console.log("You were born in " + (time - age));
 console.log("In 10 years you will be " + (age + 10) + " years old");
 console.log("You will be 50 in the year " + ((50 - age) + time));
 console.log("You will die on average in the year " + ((time - age) + 73));
-console.log("You will die in " + (75 - age) + " years");
+console.log("You will die in " + ((73 - age) / 1000 * money) + " years");
 /*
 Functions
 */
