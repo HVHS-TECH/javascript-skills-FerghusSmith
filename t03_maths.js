@@ -13,7 +13,7 @@ Main Code
 */
 
 name = window.prompt("what is your name?");
-money = window.prompt("how much money do you have?");
+money = parseInt(window.prompt("how much money do you have?"));
 age = parseInt(window.prompt("How old are you"));
 time = parseInt(window.prompt("What is the year?"));
 
