@@ -1,5 +1,8 @@
 const output = document.getElementById("output");
 
+
+
+
 var myVar = 0;
 output.innerHTML = "Start: "+myVar+"<br>";
 
@@ -16,3 +19,5 @@ function functionTwo() {
 }
 
 output.innerHTML += "end: "+myVar+"<br>";
+
+
