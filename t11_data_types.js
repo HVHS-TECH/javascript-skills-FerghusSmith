@@ -20,5 +20,5 @@ function getFormInput(){
     OUTPUT.innerHTML = "<p>Your age is "+userAge+"</p>";
 }
 function number(){
-    
+
 }
