@@ -15,10 +15,7 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 Functions
 */
 function getFormInput(){
-    const AGE_FIELD = document.getElementById("nameField");
+    const AGE_FIELD = document.getElementById("ageField");
     let userAge = number(AGE_FIELD.value);
     OUTPUT.innerHTML = "<p>Your age is "+userAge+"</p>";
-}
-function number(){
-
 }
