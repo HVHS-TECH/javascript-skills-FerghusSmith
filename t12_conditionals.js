@@ -17,12 +17,16 @@ Functions
 function getFormInputAge(){
     const AGE_FIELD = document.getElementById("ageField");
     let userAge = Number(AGE_FIELD.value);
-    OUTPUT.innerHTML += "<p>Your age is "+userAge+"</p>";
-    OUTPUT.innerHTML += "<p>In 1 year your age will be "+(userAge+1)+"</p>"
+    if (userAge < 100){
+        OUTPUT.innerHTML = "<p>You are practically a baby. goo goo ga ga</p>"
+    } else if (userAge >= 1000){
+        OUTPUT.innerHTML = "<p>You probably look like you came back out of you grave</p>"
+    } else {
+        OUTPUT.innerHTML = "<p>You are a good age</p>"
+    }
 }
 function getFormInputMoney(){
     const AGE_FIELD = document.getElementById("moneyField");
     let userMoney = Number(AGE_FIELD.value);
-    OUTPUT.innerHTML += "<p>You have $"+userMoney+"</p>";
-    OUTPUT.innerHTML += "<p>If you gain $1 you will have $"+(userMoney+1)+"</p>"
+
 }
