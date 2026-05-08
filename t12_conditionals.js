@@ -31,8 +31,8 @@ function getFormInputMoney(){
     if (userMoney <= 1000000){
         OUTPUT.innerHTML = "<p>You are broke. You can't even afford an icecream</p>"
     } else if (userMoney > 1000000000){
-        OUTPUT.innerHTML = "<p>You have enough money</p>"
-    } else {
         OUTPUT.innerHTML = "<p>YOU ARE SO GREEDY! GIVE ME SOME MONEY!</p>"
+    } else {
+        OUTPUT.innerHTML = "<p>You have enough money</p>"
     }
 }
