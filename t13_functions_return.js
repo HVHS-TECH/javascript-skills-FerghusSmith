@@ -23,7 +23,7 @@ function getFormInput(){
     const MONEY_FIELD = document.getElementById("moneyField");
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML = "<p>money: "+userMoney+"</p>"
-    
+    canBuyItem("Chocolate Bar", 2.5)
 }
 function displayProduct(_name, _price){
     OUTPUT_ITEMS.innerHTML += "<p>" + _name + ": $" + _price + "</p>";
