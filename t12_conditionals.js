@@ -19,10 +19,10 @@ function getFormInputAge(){
     let userAge = Number(AGE_FIELD.value);
     if (userAge < 100){
         OUTPUT.innerHTML = "<p>You are practically a baby. goo goo ga ga</p>"
-    } else if (userAge >= 1000){
-        OUTPUT.innerHTML = "<p>You probably look like you came back out of you grave</p>"
-    } else {
+    } else if (userAge == 100){
         OUTPUT.innerHTML = "<p>You are a good age</p>"
+    } else {
+        OUTPUT.innerHTML = "<p>You probably look like you came back out of your grave</p>"
     }
 }
 function getFormInputMoney(){
