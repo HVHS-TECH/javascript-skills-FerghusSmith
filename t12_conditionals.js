@@ -8,7 +8,8 @@ console.log("Running t07_functions_parameters.js");
 /*
 Main Code
 */
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const OUTPUT_MONEY = document.getElementById("spaceForJavaScriptOutputMoney");
+const OUTPUT_AGE = document.getElementById("spaceForJavaScriptOutputAge");
 
 
 /*
@@ -18,21 +19,21 @@ function getFormInputAge(){
     const AGE_FIELD = document.getElementById("ageField");
     let userAge = Number(AGE_FIELD.value);
     if (userAge < 100){
-        OUTPUT.innerHTML = "<p>You are practically a baby. goo goo ga ga</p>"
+        OUTPUTAGE.innerHTML = "<p>You are practically a baby. goo goo ga ga</p>"
     } else if (userAge == 100){
-        OUTPUT.innerHTML = "<p>You are a good age</p>"
+        OUTPUT_AGE.innerHTML = "<p>You are a good age</p>"
     } else {
-        OUTPUT.innerHTML = "<p>You probably look like you came back out of your grave</p>"
+        OUTPUT_AGE.innerHTML = "<p>You probably look like you came back out of your grave</p>"
     }
 }
 function getFormInputMoney(){
     const MONEY_FIELD = document.getElementById("moneyField");
     let userMoney = Number(MONEY_FIELD.value);
     if (userMoney <= 1000000){
-        OUTPUT.innerHTML = "<p>You are broke. You can't even afford an icecream</p>"
+        OUTPUT_MONEY.innerHTML = "<p>You are broke. You can't even afford an icecream</p>"
     } else if (userMoney > 1000000000){
-        OUTPUT.innerHTML = "<p>YOU ARE SO GREEDY! GIVE ME SOME MONEY!</p>"
+        OUTPUT_MONEY.innerHTML = "<p>YOU ARE SO GREEDY! GIVE ME SOME MONEY!</p>"
     } else {
-        OUTPUT.innerHTML = "<p>You have enough money</p>"
+        OUTPUT_MONEY.innerHTML = "<p>You have enough money</p>"
     }
 }
