@@ -19,7 +19,7 @@ function getFormInputAge(){
     const AGE_FIELD = document.getElementById("ageField");
     let userAge = Number(AGE_FIELD.value);
     if (userAge < 100){
-        OUTPUTAGE.innerHTML = "<p>You are practically a baby. goo goo ga ga</p>"
+        OUTPUT_AGE.innerHTML = "<p>You are practically a baby. goo goo ga ga</p>"
     } else if (userAge == 100){
         OUTPUT_AGE.innerHTML = "<p>You are a good age</p>"
     } else {
