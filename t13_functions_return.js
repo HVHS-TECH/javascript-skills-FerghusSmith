@@ -22,16 +22,21 @@ function start(){
 function getFormInput(){
     const MONEY_FIELD = document.getElementById("moneyField");
     let userMoney = Number(MONEY_FIELD.value);
+    let change;
     OUTPUT.innerHTML = "<p>money: "+userMoney+"</p>"
-    canBuyItem("Chocolate Bar", 2.5)
+    canBuyItem("Chocolate Bar", 2.5, userMoney)
+    canBuyItem("cookie", 5, userMoney)
 }
 function displayProduct(_name, _price){
     OUTPUT_ITEMS.innerHTML += "<p>" + _name + ": $" + _price + "</p>";
 }
-function canBuyItem(_name, _price){
-    if (_price >= 4.5){
+function canBuyItem(_name, _price, _money){
+    if (_money >= _price){
+        change = _money - _price;
         OUTPUT.innerHTML += "<p>you CAN buy a "+_name+"</p>"
+        OUTPUT.innerHTML += "<p>You will get $"+change+" change</p>"
+        return change
     } else {
-        OUTPUT.innerHTML += "<p>you CAN'T buy a "+_name+" bar</p>"
+        OUTPUT.innerHTML += "<p>you CAN'T buy a "+_name+"</p>"
     }
 }
