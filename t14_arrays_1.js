@@ -20,6 +20,6 @@ function start(){
 }
 function getFormInput(){
     const LIKE_FIELD = document.getElementById("likeField");
-    userLikes = Number(_FIELD.value);
-    OUTPUT.innerHTML = "<p>money: "+userMoney+"</p>"
+    userLikes = Number(LIKE_FIELD.value);
+    OUTPUT.innerHTML = "<p>"+userLikes+"</p>"
 }
