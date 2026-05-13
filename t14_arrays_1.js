@@ -4,7 +4,7 @@ Name of task: functions with parameters
 console.log("Running t07_functions_parameters.js");
 
 //Variables
-
+ 
 /*
 Main Code
 */
