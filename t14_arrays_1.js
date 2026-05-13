@@ -22,5 +22,5 @@ function getFormInput(){
     const LIKE_FIELD = document.getElementById("likesField");
     userLikes = Number(LIKE_FIELD.value);
     console.log("userLikes = "+userLikes+" (in getFormInput)")
-    
+    console.log("user choice is "+chocolateLikes[userLikes])
 }
