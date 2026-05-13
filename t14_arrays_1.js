@@ -15,11 +15,12 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 Functions
 */
 function start(){
-    OUTPUT_START.innerHTML = "<form onsubmit='return false;'><label for='formName'>Money:</label><input type='text' id='moneyField' name='formMoney' placeholder='Money:'><input type='submit' onclick=getFormInput()></form>"
+    OUTPUT_START.innerHTML = "<form onsubmit='return false;'><label for='formName'>Rate chocolate from 0 to 3</label><input type='text' id='likesField' name='formLikes' placeholder='0-3'><input type='submit' onclick=getFormInput()></form>"
     let chocolateLikes = ["you hate chocolate", "You don't mind chocolate", "you like chocolate", "You love chocolte"];
 }
 function getFormInput(){
-    const LIKE_FIELD = document.getElementById("likeField");
+    const LIKE_FIELD = document.getElementById("likesField");
     userLikes = Number(LIKE_FIELD.value);
-    OUTPUT.innerHTML = "<p>"+userLikes+"</p>"
+    console.log("userLikes = "+userLikes+" (in getFormInput)")
+    
 }
