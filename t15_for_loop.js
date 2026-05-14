@@ -19,6 +19,6 @@ function start(){
     console.log("Cleared start button pre for-loop in function 'start'")
     console.log("starting for-loop in function 'start'")
     for(let i=99; i=0; i--){
-        OUTPUT.innerHTML += "<p>"+i+" bottles of milk on the wall. "+i+" bottles of milk. Take 1 down, pass it around, "+(i-1)+" bottles of milk on the wall</p><br>"
+        console.log("count: "+i);
     }
 }
