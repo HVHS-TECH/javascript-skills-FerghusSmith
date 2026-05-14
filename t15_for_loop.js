@@ -21,6 +21,7 @@ Functions
 function start(){
     OUTPUT.innerHTML = "<br>"
     console.log("Cleared start button pre for-loop in function 'start'")
+    //for-loop 99 bottles of water on the wall song
     for (let i = 99; i > 2; i--) {
         OUTPUT.innerHTML += "<p>"+i+" bottles of water on the wall. "+i+" bottles of water. Take 1 down, pass it around. "+(i-1)+" bottles of water on the wall.<p>";
     } 
