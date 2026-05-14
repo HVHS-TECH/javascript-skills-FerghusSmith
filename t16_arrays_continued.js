@@ -23,5 +23,5 @@ function getFormInput(){
     userShops = (SHOPPING_FIELD.value);
     shoppingArray.push(userShops);
     console.log("hi now");
-    LIST_OUTPUT.innerHTML = "<p>ebdhjbwhejsbf</p>";
+    LIST_OUTPUT.innerHTML = shoppingArray[0];
 }
