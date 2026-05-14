@@ -23,5 +23,5 @@ function getFormInput(){
     userShops = (SHOPPING_FIELD.value);
     shoppingArray.push(userShops);
     console.log("hi now");
-    LIST_OUTPUT.innerHTML = shoppingArray[0];
+    LIST_OUTPUT.innerHTML = "<p>You have added "+shoppingArray[shoppingArray.length-1]+" to the list" + LIST_OUTPUT.innerHTML;
 }
