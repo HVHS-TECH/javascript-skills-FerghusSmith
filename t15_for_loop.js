@@ -11,14 +11,17 @@ Main Code
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
+
+
+console.log("starting for-loop")
+
 /*
 Functions
 */
 function start(){
     OUTPUT.innerHTML = "<br>"
     console.log("Cleared start button pre for-loop in function 'start'")
-    console.log("starting for-loop in function 'start'")
-    for(let i=99; i=0; i--){
-        console.log("count: "+i);
-    }
+    for (let i = 99; i > 0; i--) {
+        OUTPUT.innerHTML += "The number is " + i + "<br>";
+    }    
 }
