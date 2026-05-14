@@ -19,7 +19,9 @@ function start(){
 }
 function getFormInput(){
     const SHOPPING_FIELD = document.getElementById("shoppingField");
+    const LIST_OUTPUT = document.getElementById("listOutput");
     userShops = (SHOPPING_FIELD.value);
     shoppingArray.push(userShops)
-    OUTPUT.innerHTML += shoppingArray[0];
+
+    LIST_OUTPUT.innerHTML = shoppingArray;
 }
