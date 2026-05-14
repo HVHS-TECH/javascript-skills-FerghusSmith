@@ -10,6 +10,7 @@ Main Code
 */
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const LIST_OUTPUT = document.getElementById("listOutput");
 let shoppingArray = [];
 /*
 Functions 
@@ -19,9 +20,8 @@ function start(){
 }
 function getFormInput(){
     const SHOPPING_FIELD = document.getElementById("shoppingField");
-    const LIST_OUTPUT = document.getElementById("listOutput");
     userShops = (SHOPPING_FIELD.value);
-    shoppingArray.push(userShops)
-
-    LIST_OUTPUT.innerHTML = shoppingArray;
+    shoppingArray.push(userShops);
+    console.log("hi now");
+    LIST_OUTPUT.innerHTML = "<p>ebdhjbwhejsbf</p>";
 }
