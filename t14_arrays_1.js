@@ -23,5 +23,5 @@ function getFormInput(){
     userLikes = Number(LIKE_FIELD.value);
     console.log("userLikes = "+userLikes+" (in getFormInput)")
     console.log("user choice is "+likesArray[userLikes])
-    OUTPUT.innerHTML += likesArray[userLikes]+"<br>";
+    OUTPUT.innerHTML = likesArray[userLikes]+"<br>";
 }
