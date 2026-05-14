@@ -10,17 +10,15 @@ Main Code
 */
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
+let shoppingArray = ["Milk", "Mince", "Carrot", "Fizzy drink"];
 /*
 Functions
 */
 function start(){
-    OUTPUT_START.innerHTML = "<form onsubmit='return false;'><label for='formName'>shopping list:<br></label><input type='text' id='shoppingField' name='formshopping' placeholder='0-3'><input type='submit' onclick=getFormInput()></form>"
+    OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>shopping list:<br></label><input type='text' id='shoppingField' name='formshopping' placeholder='0-3'><input type='submit' onclick=getFormInput()></form>"
 }
 function getFormInput(){
-    const LIKE_FIELD = document.getElementById("likesField");
-    userLikes = Number(LIKE_FIELD.value);
-    console.log("userLikes = "+userLikes+" (in getFormInput)")
-    console.log("user choice is "+likesArray[userLikes])
-    OUTPUT.innerHTML = likesArray[userLikes]+"<br>";
+    const SHOPPING_FIELD = document.getElementById("shoppingField");
+    userShops = Number(SHOPPING_FIELD.value);
+    OUTPUT.innerHTML = shoppingArray[userShops]+"<br>";
 }
