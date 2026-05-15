@@ -16,7 +16,7 @@ let shoppingArray = [];
 Functions
 */
 function start(){
-    OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>Add items to your shopping list:<br></label><input type='text' id='shoppingField' name='formshopping' placeholder='item' required><input type='submit' onclick=getFormInput()></form>"
+    OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>Add items to your shopping list:<br></label><input type='text' id='shoppingField' name='formshopping' placeholder='item'><input type='submit' onclick=getFormInput()></form>"
 }
 function getFormInput(){
     const SHOPPING_FIELD = document.getElementById("shoppingField");
