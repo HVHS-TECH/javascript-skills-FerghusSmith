@@ -21,8 +21,10 @@ function start(){
 function getFormInput(){
     const NUMBER_FIELD = document.getElementById("numberField");
     userNumber = Number(NUMBER_FIELD.value);
-    console.log("userNumber = "+userNumber)
-    if(userNumber < 1){
-
+    
+    if(userNumber < 1 || userNumber > 10){
+        console.log("userNumber is out of range");
+    } else {
+        console.log("userNumber = "+userNumber);
     }
 }
