@@ -20,5 +20,9 @@ function start(){
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
     userName = (NAME_FIELD.value);
-    
+    if (Number.isNAN(userName)=true){
+        LIST_OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>"
+    } else {
+        LIST_OUTPUT.innerHTML = "Incorrect formatting on name input. Please try again."
+    }
 }
