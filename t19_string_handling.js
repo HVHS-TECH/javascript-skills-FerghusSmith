@@ -18,10 +18,16 @@ function start(){
     OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>Name:<br></label><input type='text' id='nameField' name='formName' placeholder='name'><input type='submit' onclick=getFormInput()></form>"
 }
 function getFormInput(){
+    console.log("running function 'getFormInput'")
     const NAME_FIELD = document.getElementById("nameField");
     userName = (NAME_FIELD.value);
-    if (is(userName) = true){
-        console.log("Name valid")
+    validName = isNaN(userName);
+    console.log("Valid name: "+validName);
+    if(validName = true){
+        console.log("Name valid in if statement");
+        LIST_OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
+    } else {
+        console.log("Name invalid in if statement");
+        LIST_OUTPUT.innerHTML = "<p>Invalid name. please try again.</p>"
     }
-    
 }
