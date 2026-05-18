@@ -23,14 +23,18 @@ function getFormInput(){
     userName = (NAME_FIELD.value);
     let validName = isNaN(userName);
     console.log("Valid name: "+validName);
+/*  checking if name is valid:
+    Name cannot be a number
+    Name must be at least three letters long
+*/
     if(validName == true && userName.length >= 3){
         console.log("Name valid in if statement");
         LIST_OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
     } else if(validName != true){
         console.log("Name invalid in if statement: name is a number");
-        LIST_OUTPUT.innerHTML = "<br><p>Name must not be a number";
+        LIST_OUTPUT.innerHTML = "<br><p>Name must not be a number</p>";
     } else if(userName.length < 3){
         console.log("Name invalid in if statement: name is too short (name length is: "+userName.length+")");
-        LIST_OUTPUT.innerHTML = "Name must be at least three letters long";
+        LIST_OUTPUT.innerHTML = "<br><p>Name must be at least three letters long</p>";
     }
 }
