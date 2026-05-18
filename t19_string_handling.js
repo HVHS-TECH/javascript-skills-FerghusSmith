@@ -23,11 +23,11 @@ function getFormInput(){
     userName = (NAME_FIELD.value);
     let validName = isNaN(userName);
     console.log("Valid name: "+validName);
-    if(validName = false){
-        console.log("Name valid in if statement: false");
-        LIST_OUTPUT.innerHTML = "<p>Invalid name. please try again.</p>"
-    } else {
+    if(validName == true && userName.length >= 3){
         console.log("Name valid in if statement: true");
         LIST_OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
+    } else {
+        console.log("Name valid in if statement: false");
+        LIST_OUTPUT.innerHTML = "<p>Invalid name. please try again.</p>"
     }
 }
