@@ -8,7 +8,6 @@ console.log("Running t16_arrays_continued.js");
 /*
 Main Code
 */
-
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const LIST_OUTPUT = document.getElementById("listOutput");
 let numberArray = [];
