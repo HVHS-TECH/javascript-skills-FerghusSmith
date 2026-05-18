@@ -20,7 +20,7 @@ function start(){
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
     userName = (NAME_FIELD.value);
-    if (isNaN(userName) = true){
+    if (is(userName) = true){
         console.log("Name valid")
     }
     
