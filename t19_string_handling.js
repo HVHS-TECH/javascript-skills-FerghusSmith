@@ -25,8 +25,7 @@ function getFormInput(){
     console.log("Valid name: "+validName);
 /*  checking if name is valid:
     Name cannot be a number
-    Name must be at least three letters long
-*/
+    Name must be at least three letters long    */
     if(validName == true && userName.length >= 3){
         console.log("Name valid in if statement");
         LIST_OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
