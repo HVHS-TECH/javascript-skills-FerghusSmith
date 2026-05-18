@@ -26,5 +26,6 @@ function getFormInput(){
         console.log("userNumber is out of range");
     } else {
         console.log("userNumber = "+userNumber);
+        OUTPUT.innerHTML = "<p>Your number is "+userNumber+"</p>";
     }
 }
