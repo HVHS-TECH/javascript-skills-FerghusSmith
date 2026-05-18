@@ -21,13 +21,13 @@ function getFormInput(){
     console.log("running function 'getFormInput'")
     const NAME_FIELD = document.getElementById("nameField");
     userName = (NAME_FIELD.value);
-    validName = isNaN(userName);
+    let validName = isNaN(userName);
     console.log("Valid name: "+validName);
-    if(validName = true){
-        console.log("Name valid in if statement");
-        LIST_OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
-    } else {
-        console.log("Name invalid in if statement");
+    if(validName = false){
+        console.log("Name valid in if statement: false");
         LIST_OUTPUT.innerHTML = "<p>Invalid name. please try again.</p>"
+    } else {
+        console.log("Name valid in if statement: true");
+        LIST_OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
     }
 }
