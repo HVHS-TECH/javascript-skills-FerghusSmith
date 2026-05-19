@@ -12,6 +12,7 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const LIST_OUTPUT = document.getElementById("listOutput");
 const MINIMUM_LENGTH = 3;
 let nameArray = [];
+let validName;
 /*
 Functions
 */
@@ -22,7 +23,7 @@ function getFormInput(){
     console.log("running function 'getFormInput'")
     const NAME_FIELD = document.getElementById("nameField");
     userName = (NAME_FIELD.value);
-    let validName = isNaN(userName);
+    validName = isNaN(userName);
     console.log("Valid name: "+validName);
 /*  checking if name is valid:
     Name cannot be a number
