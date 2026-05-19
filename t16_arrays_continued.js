@@ -1,5 +1,5 @@
 /*
-Name of task: functions with parameters
+Name of task: arrays continued
 */
 console.log("Running t16_arrays_continued.js");
 

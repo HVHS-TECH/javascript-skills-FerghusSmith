@@ -1,7 +1,7 @@
 /*
-Name of task: functions with parameters
+Name of task: functions return
 */
-console.log("Running t07_functions_parameters.js");
+console.log("Running t13_functions_return.js");
 
 //Variables
 

@@ -1,7 +1,7 @@
 /*
-Name of task: functions with parameters
+Name of task: for loop
 */
-console.log("Running t07_functions_parameters.js");
+console.log("Running t15_for_loop.js");
 
 //Variables
 

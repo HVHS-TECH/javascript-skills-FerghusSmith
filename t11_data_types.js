@@ -1,7 +1,7 @@
 /*
-Name of task: functions with parameters
+Name of task: data types
 */
-console.log("Running t07_functions_parameters.js");
+console.log("Running t11_data_types.js");
 
 //Variables
 

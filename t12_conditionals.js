@@ -1,7 +1,7 @@
 /*
-Name of task: functions with parameters
+Name of task: conditionals
 */
-console.log("Running t07_functions_parameters.js");
+console.log("Running t12_conditionals.js");
 
 //Variables
 

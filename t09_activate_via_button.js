@@ -1,7 +1,7 @@
 /*
-Name of task: functions with parameters
+Name of task:activate via button
 */
-console.log("Running t07_functions_parameters.js");
+console.log("Running t09_activate_via_button.js");
 
 //Variables
 

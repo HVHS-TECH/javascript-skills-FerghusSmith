@@ -1,7 +1,7 @@
 /*
 Name of task: variables
 */
-console.log("Running t01_introduction.js");
+console.log("Running t02_variables.js");
 
 //Variables
 let name;

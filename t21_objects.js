@@ -1,7 +1,7 @@
 /*
-Name of task: validation
+Name of task: objects
 */
-console.log("Running t16_arrays_continued.js");
+console.log("Running t21_objects.js");
 
 //Variables
 
@@ -24,9 +24,6 @@ function getFormInput(){
     userName = (NAME_FIELD.value);
     validName = isNaN(userName);
     console.log("Valid name: "+validName);
-/*  checking if name is valid:
-    Name cannot be a number
-    Name must be at least three letters long    */
     if(validName == true && userName.length >= MINIMUM_LENGTH){
         console.log("Name valid in if statement");
         LIST_OUTPUT.innerHTML = "<br><p>Your name is "+userName+"</p>";

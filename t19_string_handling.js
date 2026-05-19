@@ -1,7 +1,7 @@
 /*
-Name of task: validation
+Name of task: string handling
 */
-console.log("Running t16_arrays_continued.js");
+console.log("Running t19_string_handling.js");
 
 //Variables
 

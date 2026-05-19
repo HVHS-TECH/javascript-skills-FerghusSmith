@@ -1,7 +1,7 @@
 /*
-Name of task: functions with parameters
+Name of task: input from HTML
 */
-console.log("Running t07_functions_parameters.js");
+console.log("Running t10_input_from_HTML.js");
 
 //Variables
 
