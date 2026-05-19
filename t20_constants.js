@@ -11,7 +11,7 @@ Main Code
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const LIST_OUTPUT = document.getElementById("listOutput");
 const MINIMUM_LENGTH = 3;
-let validName;
+var validName;
 /*
 Functions
 */
