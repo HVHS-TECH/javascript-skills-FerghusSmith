@@ -41,34 +41,35 @@ function getFormInput(){
         LIST_OUTPUT.innerHTML += "<p>You are "+userAge+" years old</p>";
         LIST_OUTPUT.innerHTML += "<p>You have $"+userMoney+"</p>";
     } else {
-        LIST_OUTPUT.innerHTML = "<br>"
+        LIST_OUTPUT.innerHTML = "<p>errors:</p>"
         findError(validName, userName, validAge, userAge, validMoney, userMoney)
     }
 }
 
 function findError(_validName, _userName, _validAge, _userAge, _validMoney, _userMoney){
+    console.log("running function 'findError'")
     if(validName != true){
         console.log("userName invalid in function 'findError'. statement: name is a number");
-        LIST_OUTPUT.innerHTML += "<br><p>Name must not be a number</p>";
+        LIST_OUTPUT.innerHTML += "<p>Name must not be a number</p>";
     }
     if(userName.length < MINIMUM_NAME_LENGTH){
         console.log("userName invalid in function 'findError'. statement: name is too short (name length is: "+userName.length+")");
-        LIST_OUTPUT.innerHTML += "<br><p>Name must be at least three letters long</p>";
+        LIST_OUTPUT.innerHTML += "<p>Name must be at least three letters long</p>";
     }
     if(validAge != false){
         console.log("userAge invalid in function 'findError'. statement: age is a string");
-        LIST_OUTPUT.innerHTML += "<br><p>Age must be a number</p>";
+        LIST_OUTPUT.innerHTML += "<p>Age must be a number</p>";
     }
     if(userAge.length < MINIMUM_NUMBER_LENGTH){
         console.log("userAge invalid in function 'findError'. statement: age is not filled out");
-        LIST_OUTPUT.innerHTML += "<br><p>Age must be filled out</p>";
+        LIST_OUTPUT.innerHTML += "<p>Age must be filled out</p>";
     }
     if(validMoney != false){
         console.log("userMoney invalid in function 'findError'. statement: money is a string");
-        LIST_OUTPUT.innerHTML += "<br><p>Money must be a number</p>";
+        LIST_OUTPUT.innerHTML += "<p>Money must be a number</p>";
     }
     if(userMoney.length < MINIMUM_NUMBER_LENGTH){
         console.log("userMoney invalid in function 'findError'. statement: money is not filled out");
-        LIST_OUTPUT.innerHTML += "<br><p>Money must be filled out</p>";
+        LIST_OUTPUT.innerHTML += "<p>Money must be filled out</p>";
     }
 }
