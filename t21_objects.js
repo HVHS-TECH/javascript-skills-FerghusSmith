@@ -46,6 +46,7 @@ function getFormInput(){
     }
 }
 
+
 function findError(_validName, _userName, _validAge, _userAge, _validMoney, _userMoney){
     console.log("running function 'findError'")
     if(validName != true){
