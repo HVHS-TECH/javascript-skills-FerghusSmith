@@ -11,7 +11,7 @@ Main Code
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const LIST_OUTPUT = document.getElementById("listOutput");
 const MINIMUM_NAME_LENGTH = 3;
-const MINIMUM_NUMBER_LENGTH = 1;
+const MINIMUM_NUMBER_LENGTH = 2;
 var validName;
 var users = [];
 /*
@@ -52,7 +52,7 @@ function findError(_validName, _userName, _validAge, _userAge, _validMoney, _use
         console.log("userName invalid in function 'findError'. statement: name is a number");
         LIST_OUTPUT.innerHTML += "<p>Name must not be a number</p>";
     }
-    if(userName.length < MINIMUM_NAME_LENGTH){
+    if(userName.length <= MINIMUM_NAME_LENGTH){
         console.log("userName invalid in function 'findError'. statement: name is too short (name length is: "+userName.length+")");
         LIST_OUTPUT.innerHTML += "<p>Name must be at least three letters long</p>";
     }
@@ -60,7 +60,7 @@ function findError(_validName, _userName, _validAge, _userAge, _validMoney, _use
         console.log("userAge invalid in function 'findError'. statement: age is a string");
         LIST_OUTPUT.innerHTML += "<p>Age must be a number</p>";
     }
-    if(userAge.length < MINIMUM_NUMBER_LENGTH){
+    if(userAge.length <= MINIMUM_NUMBER_LENGTH){
         console.log("userAge invalid in function 'findError'. statement: age is not filled out");
         LIST_OUTPUT.innerHTML += "<p>Age must be filled out</p>";
     }
@@ -68,7 +68,7 @@ function findError(_validName, _userName, _validAge, _userAge, _validMoney, _use
         console.log("userMoney invalid in function 'findError'. statement: money is a string");
         LIST_OUTPUT.innerHTML += "<p>Money must be a number</p>";
     }
-    if(userMoney.length < MINIMUM_NUMBER_LENGTH){
+    if(userMoney.length <= MINIMUM_NUMBER_LENGTH){
         console.log("userMoney invalid in function 'findError'. statement: money is not filled out");
         LIST_OUTPUT.innerHTML += "<p>Money must be filled out</p>";
     }
