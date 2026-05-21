@@ -20,7 +20,7 @@ var currentUser = 0;
 Functions
 */
 function start(){
-    FORM_OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>Name:<br></label><input type='text' id='nameField' name='formName' placeholder='name'><br><label for='formAge'>Age:<br></label><input type='text' id='ageField' name='formAge' placeholder='age'><br><label for='formMoney'>Money:<br></label><input type='text' id='moneyField' name='formMoney' placeholder='money'><br><label for='formMoney'>Money:<br></label><input type='text' id='noteField' name='formNote' placeholder='notes'><br><input type='submit' onclick=getFormInput()></form>"
+    FORM_OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>Name:<br></label><input type='text' id='nameField' name='formName' placeholder='name'><br><label for='formAge'>Age:<br></label><input type='text' id='ageField' name='formAge' placeholder='age'><br><label for='formMoney'>Money:<br></label><input type='text' id='moneyField' name='formMoney' placeholder='money'><br><label for='formMoney'>Notes:<br></label><input type='text' id='noteField' name='formNote' placeholder='notes'><br><input type='submit' onclick=getFormInput()></form>"
     PULL_OUTPUT.innerHTML += "<br><form onsubmit='return false;'><label for='formPull'>pull users<br></label><input type='text' id='pullField' name='formPull' placeholder='user ID'><br><input type='submit' onclick=getFormInputPull()></form>"
 }
 function getFormInput(){
