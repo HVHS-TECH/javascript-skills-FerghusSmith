@@ -20,6 +20,8 @@ Functions
 */
 function start(){
     OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>Name:<br></label><input type='text' id='nameField' name='formName' placeholder='name'><br><label for='formAge'>Age:<br></label><input type='text' id='ageField' name='formAge' placeholder='age'><br><label for='formMoney'>Money:<br></label><input type='text' id='moneyField' name='formMoney' placeholder='money'><br><input type='submit' onclick=getFormInput()></form>"
+    OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>pull users<br></label><input type='text' id='pullField' name='formPull' placeholder='user ID'><br><input type='submit' onclick=getFormInput()></form>"
+}
 }
 function getFormInput(){
     console.log("running function 'getFormInput'")
@@ -42,6 +44,12 @@ function getFormInput(){
         LIST_OUTPUT.innerHTML += "<p>You are "+userAge+" years old</p>";
         LIST_OUTPUT.innerHTML += "<p>You have $"+userMoney+"</p>";
         LIST_OUTPUT.innerHTML += "<p>You are user "+currentUser+"</p>";
+        currentUser++;
+        users.push({
+            name: userName,
+            age: userAge,
+            money: userMoney
+        })
     } else {
         LIST_OUTPUT.innerHTML = "<p>errors:</p>"
         findError(validName, userName, validAge, validMoney)
