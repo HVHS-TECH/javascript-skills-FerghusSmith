@@ -41,6 +41,7 @@ function getFormInput(){
         LIST_OUTPUT.innerHTML = "<br><p>Your name is "+userName+"</p>";
         LIST_OUTPUT.innerHTML += "<p>You are "+userAge+" years old</p>";
         LIST_OUTPUT.innerHTML += "<p>You have $"+userMoney+"</p>";
+        LIST_OUTPUT.innerHTML += "<p>You are user "+currentUser+"</p>";
     } else {
         LIST_OUTPUT.innerHTML = "<p>errors:</p>"
         findError(validName, userName, validAge, validMoney)
