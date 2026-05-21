@@ -8,8 +8,9 @@ console.log("Running t21_objects.js");
 /*
 Main Code
 */
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const FORM_OUTPUT = document.getElementById("formOutput");
 const LIST_OUTPUT = document.getElementById("listOutput");
+const PULL_OUTPUT = document.getElementById("pullOutput");
 const MINIMUM_NAME_LENGTH = 3;
 const MINIMUM_NUMBER_LENGTH = 2;
 var validName;
@@ -19,9 +20,8 @@ var currentUser = 0;
 Functions
 */
 function start(){
-    OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>Name:<br></label><input type='text' id='nameField' name='formName' placeholder='name'><br><label for='formAge'>Age:<br></label><input type='text' id='ageField' name='formAge' placeholder='age'><br><label for='formMoney'>Money:<br></label><input type='text' id='moneyField' name='formMoney' placeholder='money'><br><input type='submit' onclick=getFormInput()></form>"
-    OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>pull users<br></label><input type='text' id='pullField' name='formPull' placeholder='user ID'><br><input type='submit' onclick=getFormInput()></form>"
-}
+    FORM_OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>Name:<br></label><input type='text' id='nameField' name='formName' placeholder='name'><br><label for='formAge'>Age:<br></label><input type='text' id='ageField' name='formAge' placeholder='age'><br><label for='formMoney'>Money:<br></label><input type='text' id='moneyField' name='formMoney' placeholder='money'><br><input type='submit' onclick=getFormInput()></form>"
+    PULL_OUTPUT.innerHTML += "<br><form onsubmit='return false;'><label for='formPull'>pull users<br></label><input type='text' id='pullField' name='formPull' placeholder='user ID'><br><input type='submit' onclick=getFormInputPull()></form>"
 }
 function getFormInput(){
     console.log("running function 'getFormInput'")
@@ -43,7 +43,7 @@ function getFormInput(){
         LIST_OUTPUT.innerHTML = "<br><p>Your name is "+userName+"</p>";
         LIST_OUTPUT.innerHTML += "<p>You are "+userAge+" years old</p>";
         LIST_OUTPUT.innerHTML += "<p>You have $"+userMoney+"</p>";
-        LIST_OUTPUT.innerHTML += "<p>You are user "+currentUser+"</p>";
+        LIST_OUTPUT.innerHTML += "<p>user ID: "+currentUser+"</p>";
         currentUser++;
         users.push({
             name: userName,
@@ -56,6 +56,13 @@ function getFormInput(){
     }
 }
 
+function getFormInputPull(){
+    console.log("running function 'getFormInputPull'");
+    const PULL_FIELD = document.getElementById("pullField");
+    pullUser = Number(PULL_FIELD.value);
+    var thisUser = users[pullUser];
+    LIST_OUTPUT.innerHTML = "<p>User "+pullUser+" is "+thisUser.name+" and is "+thisUser.age+" years old with $"+thisUser.money+".</p>";
+}
 
 function findError(_validName, _userName, _validAge, _validMoney){
     console.log("running function 'findError'")
