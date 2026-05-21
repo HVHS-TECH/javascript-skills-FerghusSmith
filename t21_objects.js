@@ -71,7 +71,6 @@ function getFormInputPull(){
     console.log("user "+thisUser.id+" is "+thisUser.name+" and is "+thisUser.age+" years old with $"+thisUser.money);
     console.log("Notes about user"+thisUser.id+": "+thisUser.note);8
 }
-}
 
 function findError(_validName, _userName, _validAge, _validMoney){
     console.log("running function 'findError'")
