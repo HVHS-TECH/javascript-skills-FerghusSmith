@@ -48,7 +48,8 @@ function getFormInput(){
         users.push({
             name: userName,
             age: userAge,
-            money: userMoney
+            money: userMoney,
+            id: currentUser
         })
     } else {
         LIST_OUTPUT.innerHTML = "<p>errors:</p>"
@@ -62,6 +63,7 @@ function getFormInputPull(){
     pullUser = Number(PULL_FIELD.value);
     var thisUser = users[pullUser];
     LIST_OUTPUT.innerHTML = "<p>User "+pullUser+" is "+thisUser.name+" and is "+thisUser.age+" years old with $"+thisUser.money+".</p>";
+    console.log("user "+thisUser.id+" is "+thisUser.name+" and is "+thisUser.age+" years old with $"+thisUser.money)
 }
 
 function findError(_validName, _userName, _validAge, _validMoney){
