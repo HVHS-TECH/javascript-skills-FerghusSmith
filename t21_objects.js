@@ -14,6 +14,7 @@ const MINIMUM_NAME_LENGTH = 3;
 const MINIMUM_NUMBER_LENGTH = 2;
 var validName;
 var users = [];
+var currentUser = 0;
 /*
 Functions
 */
