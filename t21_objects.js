@@ -20,7 +20,7 @@ var currentUser = 0;
 Functions
 */
 function start(){
-    FORM_OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>Name:<br></label><input type='text' id='nameField' name='formName' placeholder='name'><br><label for='formAge'>Age:<br></label><input type='text' id='ageField' name='formAge' placeholder='age'><br><label for='formMoney'>Money:<br></label><input type='text' id='moneyField' name='formMoney' placeholder='money'><br><input type='submit' onclick=getFormInput()></form>"
+    FORM_OUTPUT.innerHTML = "<form onsubmit='return false;'><label for='formName'>Name:<br></label><input type='text' id='nameField' name='formName' placeholder='name'><br><label for='formAge'>Age:<br></label><input type='text' id='ageField' name='formAge' placeholder='age'><br><label for='formMoney'>Money:<br></label><input type='text' id='moneyField' name='formMoney' placeholder='money'><br><label for='formMoney'>Money:<br></label><input type='text' id='noteField' name='formNote' placeholder='notes'><br><input type='submit' onclick=getFormInput()></form>"
     PULL_OUTPUT.innerHTML += "<br><form onsubmit='return false;'><label for='formPull'>pull users<br></label><input type='text' id='pullField' name='formPull' placeholder='user ID'><br><input type='submit' onclick=getFormInputPull()></form>"
 }
 function getFormInput(){
@@ -28,10 +28,12 @@ function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
     const AGE_FIELD = document.getElementById("ageField");
     const MONEY_FIELD = document.getElementById("moneyField");
+    const NOTE_FIELD = document.getElementById("noteField");
     //pulling inputs into variables
     userName = (NAME_FIELD.value);
     userAge = Number(AGE_FIELD.value);
     userMoney = Number(MONEY_FIELD.value);
+    userNote = (NOTE_FIELD.value);
     //validating variables
     validName = isNaN(userName);
     validAge = isNaN(userAge);
@@ -44,12 +46,14 @@ function getFormInput(){
         LIST_OUTPUT.innerHTML += "<p>You are "+userAge+" years old</p>";
         LIST_OUTPUT.innerHTML += "<p>You have $"+userMoney+"</p>";
         LIST_OUTPUT.innerHTML += "<p>user ID: "+currentUser+"</p>";
+        LIST_OUTPUT.innerHTML += "<p>user notes: "+currentUser+"</p>";
         currentUser++;
         users.push({
             name: userName,
             age: userAge,
             money: userMoney,
-            id: currentUser
+            id: currentUser,
+            note: userNote
         })
     } else {
         LIST_OUTPUT.innerHTML = "<p>errors:</p>"
@@ -62,8 +66,11 @@ function getFormInputPull(){
     const PULL_FIELD = document.getElementById("pullField");
     pullUser = Number(PULL_FIELD.value);
     var thisUser = users[pullUser];
-    LIST_OUTPUT.innerHTML = "<p>User "+pullUser+" is "+thisUser.name+" and is "+thisUser.age+" years old with $"+thisUser.money+".</p>";
-    console.log("user "+thisUser.id+" is "+thisUser.name+" and is "+thisUser.age+" years old with $"+thisUser.money)
+    LIST_OUTPUT.innerHTML = "<p>User "+thisUser.id+" is "+thisUser.name+" and is "+thisUser.age+" years old with $"+thisUser.money+".</p>";
+    LIST_OUTPUT.innerHTML = "<p>Notes about user "+thisUser.id+": "+thisUser.note+"</p>";
+    console.log("user "+thisUser.id+" is "+thisUser.name+" and is "+thisUser.age+" years old with $"+thisUser.money);
+    console.log("Notes about user"+thisUser.id+": "+thisUser.note);8
+}
 }
 
 function findError(_validName, _userName, _validAge, _validMoney){
