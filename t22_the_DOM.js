@@ -57,7 +57,6 @@ function getFormInput(){
         findError(validName, userName, validAge, validMoney)
     }
 }
-
 function getFormInputPull(){
     console.log("running function 'getFormInputPull'");
     const PULL_FIELD = document.getElementById("pullField");
